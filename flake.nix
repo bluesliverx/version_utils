@@ -27,7 +27,9 @@
             # Packages required for development.
             buildInputs = [
               bashInteractive
-              python3Full
+              python39Full
+              python39Packages.pytest
+              python39Packages.pytest-cov
               coreutils
               gnumake
             ];
