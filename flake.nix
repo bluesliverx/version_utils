@@ -30,6 +30,7 @@
               python39Full
               python39Packages.pytest
               python39Packages.pytest-cov
+              python39Packages.setuptools
               python39Packages.twine
               python39Packages.wheel
               coreutils
