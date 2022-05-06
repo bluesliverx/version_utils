@@ -15,12 +15,11 @@ version_utils - pure python version parsing and comparison
 Introduction
 ------------
 
-``version_utils`` is under active development. It is designed to provide a 
-pure Python convenience library capable of parsing and comparing package and
-version strings for a variety of packaging standards. Whenever possible,
-the exact logic of existing package management comparison standards will be
-implemented so that users can trust that the results are equivalent to what
-they would get on the command-line.
+``version_utils`` is designed to provide a pure Python convenience library
+capable of parsing and comparing package and version strings for a variety of
+packaging standards. Whenever possible, the exact logic of existing package
+management comparison standards will be implemented so that users can trust that
+the results are equivalent to what they would get on the command-line.
 
 Using ``version_utils`` ensures that packages can be compared even on systems
 without access to the command line or distro-provided tools on various Linux
@@ -34,8 +33,8 @@ Current Status and Roadmap
 This package is no longer being actively developed, although I will accept
 quality PRs and include them in new releases.
 
-Currently, only RPM/Yum style packages are supported. Feel free to open a PR
-with support for other package formats if you are interested!
+Currently, only RPM/Yum style packages are officially supported. Feel free to
+open a PR with support for other package formats if you are interested!
 
 Note that the ``compare_versions`` function in the ``rpm`` module will probably
 work for the majority of ``.deb`` package versions. However, there are some
