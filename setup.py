@@ -24,9 +24,9 @@ setup(
     version=version_info['__version__'],
     description=('Library for parsing system package strings and comparing '
                  'package versions'),
-    url='http://www.github.com/ihiji/version_utils',
+    url='http://www.github.com/mplanchard/version_utils',
     author='Matthew Planchard',
-    author_email='mplanchard@ihiji.com',
+    author_email='mplanchard@gmail.com',
     license='License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -43,7 +43,7 @@ setup(
         'Topic :: System :: Software Distribution',
         'Topic :: Utilities'
     ],
-    keywords=('ihiji version compare parse rpm yum versions comparison '
+    keywords=('version compare parse rpm yum versions comparison '
               'utility utilities control distribution'),
     packages=find_packages(exclude=['tests'])
 )
