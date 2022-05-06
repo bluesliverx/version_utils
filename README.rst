@@ -6,8 +6,7 @@ version_utils - pure python version parsing and comparison
 
 :Source:        https://github.com/ihiji/version_utils
 :PyPI:          https://pypi.python.org/pypi/version_utils
-:Travis:        https://travis-ci.org/ihiji/version_utils
-:Maintainer:    Matthew Planchard <mplanchard@ihiji.com>
+:Maintainer:    Matthew Planchard <msplanchard@gmail.com>
 :License:       GPLv3
 
 .. contents:: Table of Contents
@@ -32,13 +31,15 @@ to a well-documented API and standardized function calls.
 Current Status and Roadmap
 --------------------------
 
-Currently, only RPM/Yum style packages are supported, but we have plans to add
-dpkg/Debian in the near future. Development will probably slow from there, 
-although Pacman/Arch and various other distributions are on the radar.
+This package is no longer being actively developed, although I will accept
+quality PRs and include them in new releases.
+
+Currently, only RPM/Yum style packages are supported. Feel free to open a PR
+with support for other package formats if you are interested!
 
 Note that the ``compare_versions`` function in the ``rpm`` module will probably
 work for the majority of ``.deb`` package versions. However, there are some
-differences, and it will fail in certain cases. Use at your own risk until
+differences, and it will fail in certain cases. Use at your own risk unless
 official support for debian version parsing is released.
 
 Installation
@@ -133,15 +134,25 @@ their contributions to and assistance with this project:
 * Thomas Hoger (thoger_)
 * Marcus Furlong (furlongm_)
 * Alex (alxgu_)
+* Owen Taylor (`@owtaylor`_)
 
 .. _jknightihiji: https://github.com/jknightihiji
 .. _thoger: https://github.com/thoger
 .. _furlongm: https://gibhub.com/furlongm
 .. _alxgu: https://github.com/alxgu
+.. _@owtaylor: https://github.com/owtaylor
 
 
 Changelog
 ---------
+
+0.3.2
++++++
+
+Fix comparison for versions containing ``~`` (`207a707`_, thanks `@owtaylor`_!)
+
+.. _207a707: https://github.com/mplanchard/version_utils/commit/207a7076b4a01fe015ae6a801494c54c0b727c0f
+
 
 0.3.1
 +++++
